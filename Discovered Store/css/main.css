@@ -1,0 +1,106 @@
+.warna-header{
+	background-color: #acadac;
+	
+}
+
+.searchbox {
+    text-align: left;
+    background: #acadac;
+    height: 30px;
+    width: 350px;
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    color: white
+    font-size: 14px;
+    transition: 0.4s;
+    line-height: 10px;
+    padding-left: 10px; 
+    width: 250px;
+}
+
+.icon-cari {
+    padding-right: 5px;
+    float: right;
+    width: 24px;
+    height: 24px;
+}
+
+.text-header{
+	height: 20px;
+}
+
+.text-header a {
+	font-size: 14px; 
+}
+
+.bg-navbar {
+	background-color: white;
+
+}
+
+#akun {
+	display: none;
+}
+
+@media (max-width : 378px){
+    .nodisplay{
+        display: none !important;
+    }
+    .searchbox{
+        width: 150px ;
+    }
+    
+}
+@media (max-width : 528px){
+    .searchbox{
+        width: 250px !important;
+    }
+}
+@media (max-width: 576px) { 
+    .nodisplay{
+        display: none;
+    }
+    .display{
+        display: block !important;
+    }
+    #akun{
+        display: block;
+    }
+ }
+
+
+@media (max-width: 768px) {  
+    .nodisplay{
+        display: none
+    }
+    #akun{
+        display: block;
+    }
+}
+
+
+@media (max-width: 992px) {  
+    .nodisplay{
+        display: none;
+    }
+
+    .searchbox{
+        width: 400px;
+        
+        
+    }
+    #akun{
+        display: block;
+    }
+}
+
+
+@media (max-width: 1200px) {  }

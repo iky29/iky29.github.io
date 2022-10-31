@@ -1,0 +1,91 @@
+
+.button1{
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background: linear-gradient(90deg, purple, #b75eff, purple);
+	background-size: 400%;
+	border-radius: 50px;
+	z-index: 1;
+}
+
+.button1:hover {
+	animation: animate 7s linear infinite;
+	color: white;
+}
+.button2{
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background: linear-gradient(90deg, #00ccff, blue , #00ccff);
+	background-size: 400%;
+	border-radius: 50px;
+	z-index: 1;
+}
+
+.button2:hover {
+	animation: animate 7s linear infinite;
+	color: white;
+}
+
+@keyframes animate{
+	0%{
+		background-position: 0%;
+	}
+
+	100%{
+		background-position: 400%;
+	}
+}
+
+.button1:before{
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	z-index: -1;
+	background: linear-gradient(90deg, purple, #b75eff, purple);
+	background-size: 400%;
+	border-radius: 50px;
+	transition: 1s;
+}
+
+.button1:hover:before {
+	filter: blur(15px);
+	opacity: 1;
+	animation: animate 7s linear infinite;
+}
+
+.button2:before{
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	z-index: -1;
+	background: linear-gradient(90deg, #00ccff, blue , #00ccff);
+	background-size: 400%;
+	border-radius: 50px;
+	transition: 1s;
+}
+
+.button2:hover:before {
+	filter: blur(15px);
+	opacity: 1;
+	animation: animate 7s linear infinite;
+}
